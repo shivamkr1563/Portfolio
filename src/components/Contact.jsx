@@ -25,17 +25,24 @@ const Contact = () => {
     setIsSubmitting(true);
     
     // Using Web3Forms - Free email service
-    const formDataToSend = new FormData();
-    formDataToSend.append('access_key', EMAIL_CONFIG.WEB3FORMS_ACCESS_KEY);
-    formDataToSend.append('name', formData.name);
-    formDataToSend.append('email', formData.email);
-    formDataToSend.append('message', formData.message);
-    formDataToSend.append('subject', `New Portfolio Message from ${formData.name}`);
+    const formDataToSend = {
+      access_key: EMAIL_CONFIG.WEB3FORMS_ACCESS_KEY,
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      subject: `New Portfolio Message from ${formData.name}`,
+      from_name: formData.name,
+      replyto: formData.email,
+    };
     
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formDataToSend
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formDataToSend)
       });
       
       const data = await response.json();
@@ -47,7 +54,8 @@ const Contact = () => {
         
         setTimeout(() => setSubmitStatus(null), 5000);
       } else {
-        throw new Error('Failed to send');
+        console.error('Web3Forms Error:', data);
+        throw new Error(data.message || 'Failed to send');
       }
     } catch (error) {
       console.error('Form submission error:', error);

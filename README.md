@@ -1,53 +1,133 @@
-# Getting Started with Create React App
+# Shivam Kumar - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A stunning, professional, and modern portfolio website for Shivam Kumar, a final-year B.Tech Computer Science and Engineering student from Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Chennai, India.
 
-## Available Scripts
+## 🎨 Features
 
-In the project directory, you can run:
+- **Modern Design**: Tech-focused aesthetic with gradients, glassmorphism effects, and smooth animations
+- **Dark/Light Mode**: Toggle between dark and light themes with smooth transitions
+- **Fully Responsive**: Perfect display on all devices - mobile, tablet, and desktop
+- **Smooth Animations**: Powered by Framer Motion for fluid, professional transitions
+- **Interactive Components**: Hover effects, scroll animations, and engaging UI elements
 
-### `npm start`
+## 🚀 Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS v3
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **Build Tool**: Create React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. Navigate to the project directory:
+```bash
+cd shivam_portfolio
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The website will open at `http://localhost:3000`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏗️ Build for Production
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To create an optimized production build:
 
-### `npm run eject`
+```bash
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+shivam_portfolio/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx         # Navigation bar with theme toggle
+│   │   ├── Hero.jsx            # Hero section with introduction
+│   │   ├── About.jsx           # About me section
+│   │   ├── Skills.jsx          # Skills showcase with progress bars
+│   │   ├── Projects.jsx        # Featured projects
+│   │   ├── Leadership.jsx      # Leadership & achievements
+│   │   ├── Contact.jsx         # Contact form and information
+│   │   └── Footer.jsx          # Footer with links
+│   ├── App.js                  # Main app component
+│   ├── index.css               # Tailwind CSS imports and custom styles
+│   └── index.js                # Entry point
+├── tailwind.config.js          # Tailwind configuration
+├── postcss.config.js           # PostCSS configuration
+└── package.json                # Dependencies and scripts
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎯 Sections
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Hero Section
+- Name and tagline
+- Short introduction
+- CTA buttons (Download Resume, View Projects, Contact Me)
+- Social media links (LinkedIn, GitHub, Email)
 
-## Learn More
+### 2. About Section
+- Professional introduction
+- Personal highlights and goals
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Skills Section
+Categorized skills with progress indicators:
+- **Languages**: C++, Java, JavaScript, Python, C
+- **Web Development**: React.js, Node.js, Express.js, FastAPI, Tailwind CSS
+- **AI/ML**: Scikit-learn, OpenCV, YOLOv8, Transformers, Prompt Engineering
+- **Data Analysis**: Pandas, NumPy, Matplotlib
+- **Tools & Platforms**: VS Code, Git, GitHub, Firebase, Render, Figma
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Projects Section
+1. Real-Time Face Emotion Recognition
+2. Smart Voting System
+3. IoT-Based Smart Agriculture System
+4. Face Mask Detection Door Lock System
 
-### Code Splitting
+### 5. Leadership & Achievements
+- HUSTLERS-24 (Feb 2024)
+- Probrlr Skill Showcase (Mar 2024)
+- Prototype Contest (Aug 2024)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 6. Contact Section
+- Contact form
+- Email, LinkedIn, GitHub, Location
+
+## ✨ Special Features
+
+- Custom scrollbar with gradient
+- Gradient text effects
+- Glass-morphism effects
+- Floating animations
+- Scroll-based animations
+- Back to top button
+- Smooth section scrolling
+
+## 📧 Contact Information
+
+- **Email**: shivamkr1562@gmail.com
+- **LinkedIn**: [linkedin.com/in/shivam-kumar-228aa7255](https://linkedin.com/in/shivam-kumar-228aa7255)
+- **GitHub**: [github.com/shivamkr1563](https://github.com/shivamkr1563)
+- **Location**: Chennai, India
+
+## 📝 License
+
+© 2025 Shivam Kumar | All Rights Reserved
+
+---
+
+Built with ❤️ using React and Tailwind CSS
 
 ### Analyzing the Bundle Size
 

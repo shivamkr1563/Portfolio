@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { EMAIL_CONFIG } from '../config/emailConfig';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,11 +26,11 @@ const Contact = () => {
     
     // Using Web3Forms - Free email service
     const formDataToSend = new FormData();
-    formDataToSend.append('access_key', '88e142e5-8e90-4a0e-b2d9-5e7b3c4d1a2f'); // Free access key
+    formDataToSend.append('access_key', EMAIL_CONFIG.WEB3FORMS_ACCESS_KEY);
     formDataToSend.append('name', formData.name);
     formDataToSend.append('email', formData.email);
     formDataToSend.append('message', formData.message);
-    formDataToSend.append('to_email', 'shivamkr1562@gmail.com');
+    formDataToSend.append('subject', `New Portfolio Message from ${formData.name}`);
     
     try {
       const response = await fetch('https://api.web3forms.com/submit', {

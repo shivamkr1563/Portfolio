@@ -1,22 +1,30 @@
 # Shivam Kumar - Portfolio Website
 
+🌐 **Live Demo:** [https://portfolio-8fxl4bi1k-shivamkr1563s-projects.vercel.app](https://portfolio-8fxl4bi1k-shivamkr1563s-projects.vercel.app)
+
 A stunning, professional, and modern portfolio website for Shivam Kumar, a final-year B.Tech Computer Science and Engineering student from Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Chennai, India.
 
 ## 🎨 Features
 
-- **Modern Design**: Tech-focused aesthetic with gradients, glassmorphism effects, and smooth animations
-- **Dark/Light Mode**: Toggle between dark and light themes with smooth transitions
+- **3D AI Theme**: Immersive 3D graphics with Three.js and React Three Fiber
+- **Modern Design**: Tech-focused aesthetic with vibrant gradients and glassmorphism effects
+- **Dark Theme**: Sleek dark UI with colorful accents and glow effects
+- **3D Animations**: Interactive 3D scenes including AI brain, particle fields, and floating skill cubes
 - **Fully Responsive**: Perfect display on all devices - mobile, tablet, and desktop
 - **Smooth Animations**: Powered by Framer Motion for fluid, professional transitions
+- **Working Contact Form**: Integrated with Web3Forms for instant email notifications
 - **Interactive Components**: Hover effects, scroll animations, and engaging UI elements
 
 ## 🚀 Technologies Used
 
 - **Frontend**: React.js
 - **Styling**: Tailwind CSS v3
-- **Animations**: Framer Motion
+- **3D Graphics**: Three.js, React Three Fiber, React Three Drei
+- **Animations**: Framer Motion, React Spring
 - **Icons**: React Icons
+- **Email Service**: Web3Forms
 - **Build Tool**: Create React App
+- **Deployment**: Vercel
 
 ## 📦 Installation
 

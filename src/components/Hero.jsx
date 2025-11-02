@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaCode, FaRocket } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import Scene3D from './Scene3D';
 
 const Hero = () => {
@@ -143,6 +144,17 @@ const Hero = () => {
               className="p-5 bg-gray-700/30 backdrop-blur-lg text-gray-200 rounded-full hover:bg-gray-700/50 transition-all shadow-[0_0_20px_rgba(156,163,175,0.4)] border border-gray-500/30"
             >
               <FaGithub size={28} />
+            </motion.a>
+
+            <motion.a
+              whileHover={{ scale: 1.2, y: -10 }}
+              whileTap={{ scale: 0.9 }}
+              href="https://leetcode.com/u/shivamkr1562/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-5 bg-orange-600/30 backdrop-blur-lg text-orange-300 rounded-full hover:bg-orange-600/50 transition-all shadow-[0_0_20px_rgba(249,115,22,0.4)] border border-orange-400/30"
+            >
+              <SiLeetcode size={28} />
             </motion.a>
 
             <motion.a
